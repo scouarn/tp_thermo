@@ -60,7 +60,7 @@ def main() :
 	cb.set_label('Différence de température')
 	plt.xlabel('Temps')
 	plt.ylabel('Position')
-	plt.title('Évolution de la température dans une barre métalique')
+	plt.title('Évolution de la température dans une barre métallique')
 
 	plt.show()
 
