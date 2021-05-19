@@ -1,0 +1,69 @@
+
+\begin{frame}
+
+  \frametitle{Architecture machine}
+  \framesubtitle{Principe}
+  
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.6\linewidth]{figs/generalArch.pdf}
+  \end{figure}
+
+
+
+\end{frame}
+
+
+\begin{frame}
+
+  \frametitle{Architecture machine}
+  \framesubtitle{Exemple}
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figs/protArch.pdf}
+  \end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+
+  \frametitle{Architecture machine}
+  \framesubtitle{Instructions machines}
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{figs/set.pdf}
+  \end{figure}
+
+  \bigskip
+
+  \begin{center}
+    \begin{tabular}{ |c||c|c|c|c|c| }
+     \hline
+     Code & Fonction & Source / Dest & Condition \\
+     \hline
+     000  & ADD & NIL & Vrai\\
+     \hline
+     001  & SUB & A   & $A=0$\\
+     \hline
+     010  & INC & B   & $A<0$\\
+     \hline
+     011  & DEC & C   & $A>0$\\
+     \hline
+     100  & AND & PC  & Faux\\
+     \hline
+     101  & OR  & ADR & $A\neq0$\\
+     \hline
+     110  & XOR & MEM & $A\geq0$\\
+     \hline
+     111  & SHT & IMM & $A\leq0$\\
+     \hline
+    \end{tabular}
+  \end{center}
+
+
+
+\end{frame}

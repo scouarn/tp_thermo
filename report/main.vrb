@@ -1,0 +1,33 @@
+\frametitle{Code utilisé}
+    \framesubtitle{Exécution}
+
+\begin{minted}[fontsize=\tiny]{Python}
+#argument des ranges : ignorer les conditions initiales/limites
+#évite les erreurs d'indices
+
+for t in range(1, n_t) :
+
+    #traité comme un système de n_x équations
+    for x in range(1, n_x-1) :
+        thet[x][t] = thet[x][t-1] + d_theth(x,t) * dt
+
+    #pourcentage de complétion
+    print(f'Simulation {round(t/n_t*100)}%', end='\r')
+
+print("\nOK")
+
+
+#affichage histogramme 2D
+plt.imshow(thet, extent=(0, tf, 0, L), cmap='inferno', interpolation='nearest', aspect='auto')
+cb = plt.colorbar()
+
+#titre et légendes
+cb.set_label('Température')
+plt.xlabel('Temps')
+plt.ylabel('Position')
+plt.title('Évolution de la température dans une barre métallique')
+
+plt.show()
+\end{minted}
+
+

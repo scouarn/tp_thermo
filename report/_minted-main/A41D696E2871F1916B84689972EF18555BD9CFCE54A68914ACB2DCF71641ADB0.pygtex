@@ -1,0 +1,28 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{}argument des ranges : ignorer les conditions initiales/limites}
+\PYG{c+c1}{\PYGZsh{}évite les erreurs d\PYGZsq{}indices}
+
+\PYG{k}{for} \PYG{n}{t} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{n\PYGZus{}t}\PYG{p}{)} \PYG{p}{:}
+
+    \PYG{c+c1}{\PYGZsh{}traité comme un système de n\PYGZus{}x équations}
+    \PYG{k}{for} \PYG{n}{x} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{n\PYGZus{}x}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{:}
+        \PYG{n}{thet}\PYG{p}{[}\PYG{n}{x}\PYG{p}{][}\PYG{n}{t}\PYG{p}{]} \PYG{o}{=} \PYG{n}{thet}\PYG{p}{[}\PYG{n}{x}\PYG{p}{][}\PYG{n}{t}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{+} \PYG{n}{d\PYGZus{}theth}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,}\PYG{n}{t}\PYG{p}{)} \PYG{o}{*} \PYG{n}{dt}
+
+    \PYG{c+c1}{\PYGZsh{}pourcentage de complétion}
+    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}Simulation }\PYG{l+s+si}{\PYGZob{}}\PYG{n+nb}{round}\PYG{p}{(}\PYG{n}{t}\PYG{o}{/}\PYG{n}{n\PYGZus{}t}\PYG{o}{*}\PYG{l+m+mi}{100}\PYG{p}{)}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{\PYGZpc{}\PYGZsq{}}\PYG{p}{,} \PYG{n}{end}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}r}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s2}{OK\PYGZdq{}}\PYG{p}{)}
+
+
+\PYG{c+c1}{\PYGZsh{}affichage histogramme 2D}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{imshow}\PYG{p}{(}\PYG{n}{thet}\PYG{p}{,} \PYG{n}{extent}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{tf}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{L}\PYG{p}{),} \PYG{n}{cmap}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}inferno\PYGZsq{}}\PYG{p}{,} \PYG{n}{interpolation}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}nearest\PYGZsq{}}\PYG{p}{,} \PYG{n}{aspect}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}auto\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{cb} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{colorbar}\PYG{p}{()}
+
+\PYG{c+c1}{\PYGZsh{}titre et légendes}
+\PYG{n}{cb}\PYG{o}{.}\PYG{n}{set\PYGZus{}label}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Température\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Temps\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Position\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Évolution de la température dans une barre métallique\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+\end{Verbatim}

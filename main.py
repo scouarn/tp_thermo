@@ -3,13 +3,11 @@ import matplotlib.pyplot as plt
 
 
 #constantes
-T0 = 350.0
-T1 = 290.0
 
 L  = 10.0
 dx = 0.1
 
-tf = 50.0
+tf = 5.0
 dt = 0.001
 
 
@@ -30,10 +28,12 @@ def main() :
 	thet = np.zeros((n_x, n_t))
 
 	#conditions initiales (theth[x][0] = 0)
-	thet[:, 0].fill(0)
+	for i in range(n_x) :
+		thet[i][0] = i/n_x
 
-	#conditions limites (theth[0][t] = T0-T1 et theth[L][t] = 0)
-	thet[0].fill(T0-T1)
+
+	#conditions limites (theth[0][t] = 1 et theth[L][t] = 0)
+	thet[0].fill(1)
 	thet[-1].fill(0)
 
 
@@ -57,7 +57,7 @@ def main() :
 	plt.imshow(thet, extent=(0, tf, 0, L), cmap='inferno', interpolation='nearest', aspect='auto')
 	cb = plt.colorbar()
 	
-	cb.set_label('Différence de température')
+	cb.set_label('Température')
 	plt.xlabel('Temps')
 	plt.ylabel('Position')
 	plt.title('Évolution de la température dans une barre métallique')
