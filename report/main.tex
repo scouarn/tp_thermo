@@ -4,7 +4,7 @@
 \usepackage{minted}
 
 \graphicspath{{figs/}}
-
+\usefonttheme[onlymath]{serif}
 
 \title{Modélisation de la diffusion thermique.}
 \author{Josselin SCOUARNEC}
@@ -13,7 +13,7 @@
 \begin{document}
 
     \maketitle
-    
+
 
     \begin{frame}
     \frametitle{Présentation de l'expérience}
@@ -26,7 +26,7 @@
 
     $$\frac{\partial T}{\partial t } = k\frac{\partial^2 T}{\partial x^2 }$$
 
-    La variation de température en $x$ à l'instant $t$ par rapport à $t$ est proportionnelle à une variation de température par rapport à $x$. 
+    La variation de température en $x$ à l'instant $t$ par rapport à $t$ est proportionnelle à une variation de température par rapport à $x$.
 
 
     \end{frame}
@@ -45,7 +45,7 @@
 
     \bigskip
 
-    L'équation devient : 
+    L'équation devient :
 
     $$\small\boxed{T(x, t + \Delta t) = T(x, t) + k \Delta t \frac{T(x+ \Delta x, t) + T(x-\Delta x, t) -2T(x, t)}{\Delta x ^2 }}$$
 
@@ -66,7 +66,7 @@
 
     \medskip
 
-    De plus avec les conditions initiales $T(x,0)=T_1$ on a $\theta(x, 0) = 0$. On expérimentera avec différents profiles de températures initiales.
+    De plus avec les conditions initiales $T(x,0)=T_1$ on a $\theta(x, 0) = 0$. On expérimentera avec différents profils de températures initiales.
 
     \bigskip
 
@@ -133,7 +133,7 @@ thet[-1].fill(0)
 #différentielle
 d_theth = lambda x,t : (thet[x+1][t-1] + thet[x-1][t-1] - 2*thet[x][t-1])/(dx*dx)
 
-  
+
 \end{minted}
 
 
@@ -180,7 +180,7 @@ plt.show()
 
     \begin{frame}
     \frametitle{Résultats}
-    \framesubtitle{Profile initial uniforme en $0$}
+    \framesubtitle{Profil initial uniforme en $0$}
 
     \begin{center}
     \includegraphics[width=1.2\linewidth]{figs/Figure_1.pdf}
@@ -192,7 +192,7 @@ plt.show()
 
     \begin{frame}
     \frametitle{Résultats}
-    \framesubtitle{Profile initial uniforme en $0.5$}
+    \framesubtitle{Profil initial uniforme en $0.5$}
 
     \begin{center}
     \includegraphics[width=1.2\linewidth]{figs/Figure_2.pdf}
@@ -203,7 +203,7 @@ plt.show()
 
     \begin{frame}
     \frametitle{Résultats}
-    \framesubtitle{Profile initial sinusoïdal (2 périodes, tf=5)}
+    \framesubtitle{Profil initial sinusoïdal (2 périodes, tf=5)}
 
     \begin{center}
     \includegraphics[width=1.2\linewidth]{figs/Figure_3.pdf}
@@ -216,7 +216,7 @@ plt.show()
 
     \begin{frame}
     \frametitle{Résultats}
-    \framesubtitle{Profile initial linéaire}
+    \framesubtitle{Profil initial linéaire}
 
     \begin{center}
     \includegraphics[width=1.2\linewidth]{figs/Figure_4.pdf}
@@ -228,7 +228,7 @@ plt.show()
 
     \begin{frame}
     \frametitle{Résultats}
-    \framesubtitle{Profile initial linéaire "inversé"}
+    \framesubtitle{Profil initial linéaire "inversé"}
 
     \begin{center}
     \includegraphics[width=1.2\linewidth]{figs/Figure_5.pdf}
