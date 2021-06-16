@@ -26,7 +26,8 @@
 
     $$\frac{\partial T}{\partial t } = k\frac{\partial^2 T}{\partial x^2 }$$
 
-    La variation de température en $x$ à l'instant $t$ par rapport à $t$ est proportionnelle à une variation de température par rapport à $x$.
+    La variation de température en $x$ par rapport à $t$ est proportionnelle à une certaine variation de température par rapport à $x$. Rq : elle est nulle pour un profil linéaire.
+
 
 
     \end{frame}
@@ -34,14 +35,14 @@
     \begin{frame}
     \frametitle{Discrétisation du problème}
 
-    La valeur de $t$ ne peut que croître alors pour $x$ on doit prendre en compte sa variation "vers la gauche" et "vers la droite".
+    On approxime les variations par des taux d'accroissement. Intuitivement la variation d'ordre $2$ est la variation de la variation. On remplace :
 
-    \bigskip
+    \medskip
 
-    $$\frac{\partial T}{\partial t } \longrightarrow \frac{T(x, t + \Delta T) - T(x, t)}{\Delta t }$$
+    $$\frac{\partial T}{\partial t } \longrightarrow \frac{T(t + \Delta T) - T(t)}{\Delta t }$$
 
 
-   	$$\frac{\partial^2 T}{\partial x^2} \longrightarrow \frac{T(x+ \Delta x, t)-T(x, t) + T(x-\Delta x, t) -T(x, t)}{\Delta x ^2 }$$
+   	$$\frac{\partial^2 T}{\partial x^2} \longrightarrow \frac{(T(x + \Delta x)-T(x)) - (T(x-\Delta x) -T(x))}{\Delta x ^2 }$$
 
     \bigskip
 
@@ -58,21 +59,21 @@
 
 
     On pose $\theta(x,t) = \frac{T(x,t) -T_1}{T_0 - T_1}$ la température normalisée,
-    ainsi les paramètres $T_0$ et $T_1$ n'interviennent plus :
+    ainsi les paramètres $T_0$ et $T_1$ n'interviennent plus.
 
     \medskip
 
-    On remarque que pour tout $t$, $\theta(0, t) = 1$ et $\theta(L, t) = 0$, les conditions limites aux extrémités de la barre.
+    On a les conditions suivantes sur les extrémités de la barre : $\theta(0, t) = 1$ et $\theta(L, t) = 0$.
 
     \medskip
 
-    De plus avec les conditions initiales $T(x,0)=T_1$ on a $\theta(x, 0) = 0$. On expérimentera avec différents profils de températures initiales.
-
-    \bigskip
-
-    En fixant $k = 1$ et en remplaçant $\theta$ dans l'équation par $T = \theta(T_0 - T_1) + T_1$ on obtient une équation similaire :
+    Comme $T = \theta(T_0 - T_1) + T_1$ on trouve une équation très similaire :
 
     $$\boxed{\theta(x, t + \Delta t) = \theta(x, t) + \Delta t \frac{\theta(x+ \Delta x, t) + \theta(x-\Delta x, t) -2\theta(x, t)}{\Delta x ^2 }}$$
+
+    \medskip
+
+    On peut poser $k = 1$ et $L = 1$.
 
 
     \end{frame}
@@ -86,13 +87,13 @@
     \begin{center}
 	    \begin{tabular}{ |c|c|c|c|c|c| }
 	     \hline
-	     $x, t$ & $0$ & $t_2$ & $t_3$ & ... & $t_f$ \\
+	     $x, t$ & $t_0$ & $t_1$ & $t_2$ & ... & $t_f$ \\
 	     \hline
-	     $0$   & $0$ & $1$ & $1$ &  & $1$\\
-	     $x_2$ & $0$ & $\theta_{1,1}$ & $\theta_{1,2}$ &  & $\theta_{1,f}$\\
-	     $x_3$ & $0$ & $\theta_{2,1}$ & $\theta_{2,2}$ &  & $\theta_{2,f}$\\
-	     ... &   &   &   &  &  \\
-	     $x_n = L$ &   $0$ & $0$ & $0$ &  & $0$\\
+	     $0$   & $\theta_{0,0}$ & $1$ & $1$ &  & $1$\\
+	     $x_2$ & $\theta_{1,0}$ & $\theta_{1,1}$ & $\theta_{1,2}$ &  & $\theta_{1,f}$\\
+	     $x_3$ & $\theta_{2,0}$ & $\theta_{2,1}$ & $\theta_{2,2}$ &  & $\theta_{2,f}$\\
+	     ... & ... & ... & ... &  & ... \\
+	     $x_n = L$ &   $\theta_{n,0}$ & $0$ & $0$ &  & $0$\\
 	     \hline
 	    \end{tabular}
   	\end{center}
@@ -103,7 +104,7 @@
 
 
 	\begin{frame}[fragile]
-    \frametitle{Code utilisé}
+    \frametitle{Implémentation}
     \framesubtitle{Initialisation}
 
 \begin{minted}[fontsize=\tiny]{Python}
@@ -142,7 +143,7 @@ d_theth = lambda x,t : (thet[x+1][t-1] + thet[x-1][t-1] - 2*thet[x][t-1])/(dx*dx
 
 
     \begin{frame}[fragile]
-    \frametitle{Code utilisé}
+    \frametitle{Implémentation}
     \framesubtitle{Exécution}
 
 \begin{minted}[fontsize=\tiny]{Python}
@@ -192,6 +193,31 @@ plt.show()
 
     \begin{frame}
     \frametitle{Résultats}
+    \framesubtitle{Profil initial linéaire}
+
+    \begin{center}
+    \includegraphics[width=1.2\linewidth]{figs/Figure_4.pdf}
+    \end{center}
+
+
+    \end{frame}
+
+
+    \begin{frame}
+    \frametitle{Résultats}
+    \framesubtitle{Profil initial linéaire "inversé"}
+
+    \begin{center}
+    \includegraphics[width=1.2\linewidth]{figs/Figure_5.pdf}
+    \end{center}
+
+
+    \end{frame}
+
+
+
+    \begin{frame}
+    \frametitle{Résultats}
     \framesubtitle{Profil initial uniforme en $0.5$}
 
     \begin{center}
@@ -214,28 +240,10 @@ plt.show()
 
 
 
-    \begin{frame}
-    \frametitle{Résultats}
-    \framesubtitle{Profil initial linéaire}
-
-    \begin{center}
-    \includegraphics[width=1.2\linewidth]{figs/Figure_4.pdf}
-    \end{center}
 
 
-    \end{frame}
 
 
-    \begin{frame}
-    \frametitle{Résultats}
-    \framesubtitle{Profil initial linéaire "inversé"}
-
-    \begin{center}
-    \includegraphics[width=1.2\linewidth]{figs/Figure_5.pdf}
-    \end{center}
-
-
-    \end{frame}
 
 
 

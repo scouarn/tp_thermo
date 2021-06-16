@@ -1,4 +1,4 @@
-\frametitle{Code utilisé}
+\frametitle{Implémentation}
     \framesubtitle{Exécution}
 
 \begin{minted}[fontsize=\tiny]{Python}

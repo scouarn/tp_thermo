@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.12)  15 JUN 2021 19:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.6.12)  16 JUN 2021 12:35
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1120,45 +1120,45 @@ LaTeX Info: Redefining \up on input line 13.
 <figs/schem.pdf, id=43, 347.4556pt x 124.65529pt>
 File: figs/schem.pdf Graphic file (type pdf)
 <use figs/schem.pdf>
-Package pdftex.def Info: figs/schem.pdf  used on input line 32.
+Package pdftex.def Info: figs/schem.pdf  used on input line 33.
 (pdftex.def)             Requested size: 184.3758pt x 66.14687pt.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-2.
+3.
 
 (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-2.
+3.
 
 (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-32.
+33.
 
 (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-32.
+33.
 
 (/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 32.
+(Font)              <10.95> on input line 33.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 32.
+(Font)              <8> on input line 33.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 32.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+(Font)              <6> on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1167,18 +1167,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  <./figs/schem.pdf>]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 53.
+LaTeX Font Warning: Command \small invalid in math mode on input line 54.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 53.
+(Font)              <10> on input line 54.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 53.
+(Font)              <7> on input line 54.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 53.
+(Font)              <5> on input line 54.
 [3
 
 ]
-Overfull \hbox (4.41154pt too wide) detected at line 78
+Overfull \hbox (4.41154pt too wide) detected at line 79
 []
  []
 
@@ -1224,90 +1224,90 @@ File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 <figs/Figure_1.pdf, id=218, 1384.69322pt x 823.87799pt>
 File: figs/Figure_1.pdf Graphic file (type pdf)
 <use figs/Figure_1.pdf>
-Package pdftex.def Info: figs/Figure_1.pdf  used on input line 190.
+Package pdftex.def Info: figs/Figure_1.pdf  used on input line 191.
 (pdftex.def)             Requested size: 368.7469pt x 219.39519pt.
 
-Overfull \hbox (61.45703pt too wide) in paragraph at lines 190--190
+Overfull \hbox (61.45703pt too wide) in paragraph at lines 191--191
  [] 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 190.
+(Font)              <9> on input line 191.
 
-Overfull \vbox (7.72206pt too high) detected at line 190
+Overfull \vbox (7.72206pt too high) detected at line 191
  []
 
 [8
 
  <./figs/Figure_1.pdf>]
-<figs/Figure_2.pdf, id=258, 1384.69322pt x 823.87799pt>
-File: figs/Figure_2.pdf Graphic file (type pdf)
-<use figs/Figure_2.pdf>
-Package pdftex.def Info: figs/Figure_2.pdf  used on input line 202.
+<figs/Figure_4.pdf, id=258, 1384.69322pt x 823.87799pt>
+File: figs/Figure_4.pdf Graphic file (type pdf)
+<use figs/Figure_4.pdf>
+Package pdftex.def Info: figs/Figure_4.pdf  used on input line 203.
 (pdftex.def)             Requested size: 368.7469pt x 219.39519pt.
 
-Overfull \hbox (61.45703pt too wide) in paragraph at lines 202--202
+Overfull \hbox (61.45703pt too wide) in paragraph at lines 203--203
  [] 
  []
 
 
-Overfull \vbox (7.72206pt too high) detected at line 202
+Overfull \vbox (7.72206pt too high) detected at line 203
  []
 
 [9
 
- <./figs/Figure_2.pdf>]
-<figs/Figure_3.pdf, id=297, 1384.69322pt x 823.87799pt>
-File: figs/Figure_3.pdf Graphic file (type pdf)
-<use figs/Figure_3.pdf>
-Package pdftex.def Info: figs/Figure_3.pdf  used on input line 213.
+ <./figs/Figure_4.pdf>]
+<figs/Figure_5.pdf, id=296, 1384.69322pt x 823.87799pt>
+File: figs/Figure_5.pdf Graphic file (type pdf)
+<use figs/Figure_5.pdf>
+Package pdftex.def Info: figs/Figure_5.pdf  used on input line 215.
 (pdftex.def)             Requested size: 368.7469pt x 219.39519pt.
 
-Overfull \hbox (61.45703pt too wide) in paragraph at lines 213--213
+Overfull \hbox (61.45703pt too wide) in paragraph at lines 215--215
  [] 
  []
 
 
-Overfull \vbox (7.72206pt too high) detected at line 213
+Overfull \vbox (7.72206pt too high) detected at line 215
  []
 
 [10
 
- <./figs/Figure_3.pdf>]
-<figs/Figure_4.pdf, id=335, 1384.69322pt x 823.87799pt>
-File: figs/Figure_4.pdf Graphic file (type pdf)
-<use figs/Figure_4.pdf>
-Package pdftex.def Info: figs/Figure_4.pdf  used on input line 226.
+ <./figs/Figure_5.pdf>]
+<figs/Figure_2.pdf, id=334, 1384.69322pt x 823.87799pt>
+File: figs/Figure_2.pdf Graphic file (type pdf)
+<use figs/Figure_2.pdf>
+Package pdftex.def Info: figs/Figure_2.pdf  used on input line 228.
 (pdftex.def)             Requested size: 368.7469pt x 219.39519pt.
 
-Overfull \hbox (61.45703pt too wide) in paragraph at lines 226--226
+Overfull \hbox (61.45703pt too wide) in paragraph at lines 228--228
  [] 
  []
 
 
-Overfull \vbox (7.72206pt too high) detected at line 226
+Overfull \vbox (7.72206pt too high) detected at line 228
  []
 
 [11
 
- <./figs/Figure_4.pdf>]
-<figs/Figure_5.pdf, id=373, 1384.69322pt x 823.87799pt>
-File: figs/Figure_5.pdf Graphic file (type pdf)
-<use figs/Figure_5.pdf>
-Package pdftex.def Info: figs/Figure_5.pdf  used on input line 238.
+ <./figs/Figure_2.pdf>]
+<figs/Figure_3.pdf, id=373, 1384.69322pt x 823.87799pt>
+File: figs/Figure_3.pdf Graphic file (type pdf)
+<use figs/Figure_3.pdf>
+Package pdftex.def Info: figs/Figure_3.pdf  used on input line 239.
 (pdftex.def)             Requested size: 368.7469pt x 219.39519pt.
 
-Overfull \hbox (61.45703pt too wide) in paragraph at lines 238--238
+Overfull \hbox (61.45703pt too wide) in paragraph at lines 239--239
  [] 
  []
 
 
-Overfull \vbox (7.72206pt too high) detected at line 238
+Overfull \vbox (7.72206pt too high) detected at line 239
  []
 
 [12
 
- <./figs/Figure_5.pdf>]
+ <./figs/Figure_3.pdf>]
 \tf@nav=\write8
 \openout8 = `main.nav'.
 
@@ -1326,7 +1326,7 @@ runsystem(rm main.pyg)...executed.
 Here is how much of TeX's memory you used:
  26633 strings out of 478994
  481154 string characters out of 5864751
- 841123 words of memory out of 5000000
+ 842123 words of memory out of 5000000
  43487 multiletter control sequences out of 15000+600000
  454094 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1346,7 +1346,7 @@ ts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss
 -dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public
 /lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/sha
 re/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on main.pdf (12 pages, 515334 bytes).
+Output written on main.pdf (12 pages, 514918 bytes).
 PDF statistics:
  476 PDF objects out of 1000 (max. 8388607)
  407 compressed objects within 5 object streams
